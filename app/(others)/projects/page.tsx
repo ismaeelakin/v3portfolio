@@ -119,7 +119,7 @@ export default function Projects() {
                     },
                     { icon: <SiNginx size={20} />, name: "Nginx" },
                     { icon: <SiJirasoftware size={20} />, name: "Jira" },
-                    { icon: <SiMarkdotjs size={20} />, name: "Markdown" },
+                    { icon: <SiMatterdotjs size={20} />, name: "Markdown" },
                     { icon: <SiMongodb size={20} />, name: "MongoDB" },
                     { icon: <SiVercel size={20} />, name: "Vercel" },
                   ].map((stack, index) => (
