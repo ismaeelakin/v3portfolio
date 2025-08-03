@@ -36,7 +36,7 @@ const projects: ProjectTypes[] = [
   {
     name: "Academic Research Assistant",
     mainType: "Python",
-previewLink: "https://akin-research-powered-academic-assi.vercel.app/"
+    previewLink: "https://akin-research-powered-academic-assi.vercel.app/",
     previewImg: "https://imgur.com/a/FzuxWG8", // image from https://imgur.com/a/FzuxWG8
     category: [
       "Python",
@@ -57,7 +57,7 @@ previewLink: "https://akin-research-powered-academic-assi.vercel.app/"
   {
     name: "AkinSpace",
     mainType: "Typescript",
-    previewLink: "https://akin-space.vercel.app/"
+    previewLink: "https://akin-space.vercel.app/",
     previewImg: "https://imgur.com/a/Gfzl6IZ", // image from https://imgur.com/a/Gfzl6IZ
     category: [
       "NextJs",
