@@ -5,7 +5,7 @@ const projects: ProjectTypes[] = [
     name: "Portfolio",
     mainType: "typescript",
     previewLink: "https://v3portfolio-rho.vercel.app/",
-    previewImg: "https://imgur.com/a/jyirqzf",
+    previewImg: "/projects/v3portfolio.png",
     category: ["Typescript", "NextJs", "JavaScript"],
     description: "My current portfolio website.",
   },
@@ -16,6 +16,7 @@ const projects: ProjectTypes[] = [
     previewImg: "/projects/supervaani.png",
     category: [
       "JavaScript",
+      "React",
       "HTML3",
       "CSS3",
       "Python",
@@ -37,7 +38,7 @@ const projects: ProjectTypes[] = [
     name: "Academic Research Assistant",
     mainType: "Python",
     previewLink: "https://akin-research-powered-academic-assi.vercel.app/",
-    previewImg: "https://imgur.com/a/FzuxWG8", // image from https://imgur.com/a/FzuxWG8
+    previewImg: "/projects/academicresearchassistance.png",
     category: [
       "Python",
       "LangChain",
@@ -58,7 +59,7 @@ const projects: ProjectTypes[] = [
     name: "AkinSpace",
     mainType: "Typescript",
     previewLink: "https://akin-space.vercel.app/",
-    previewImg: "https://imgur.com/a/Gfzl6IZ", // image from https://imgur.com/a/Gfzl6IZ
+    previewImg: "/projects/akinspace.png",
     category: [
       "NextJs",
       "Typescript",

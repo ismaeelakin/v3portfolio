@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ismaeel_Akin</title>
+        <title>Ismaeel Akin</title>
         <meta
           name="description"
-          content="Hello there, I'm Ismaeel_Akin. I'm a Software Engineer and a Writer."
+          content="Hello there, I'm Ismaeel Akin. I'm a Software Engineer and a Writer."
         />
       </Head>
       <main
@@ -19,7 +19,7 @@ export default function Home() {
         <div className="m-auto w-3/4 md:w-11/12">
           <div className="text-[#e5e9f0]">
             <span className="md:text-sm">Hi all. I am</span>
-            <h1 className=" text-[4em] my-0.5 -mt-1.5">Ismaeel_Akin</h1>
+            <h1 className=" text-[4em] my-0.5 -mt-1.5">Ismaeel Akin</h1>
             <h2 className="text-[#4d5bce] text-2xl">
               &gt; <Animation />
             </h2>

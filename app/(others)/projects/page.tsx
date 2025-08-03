@@ -73,7 +73,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Ismaeel_Akin - Projects</title>
+        <title>Ismaeel Akin - Projects</title>
         <meta
           name="description"
           content="Check out what I've been working on."
@@ -123,7 +123,7 @@ export default function Projects() {
                     { icon: <SiMongodb size={20} />, name: "MongoDB" },
                     { icon: <SiVercel size={20} />, name: "Vercel" },
                   ].map((stack, index) => (
-                    <div key={index}>
+                    <div key={index} className="inline-block mr-4">
                       <input
                         id={`entry1${index}`}
                         type="checkbox"

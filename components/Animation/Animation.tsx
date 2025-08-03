@@ -10,7 +10,7 @@ export default function Animation() {
           500,
           "I use Arch and nvim btw",
           500,
-          "I am learning Adult Train + Org Dev",
+          "I am learning PyTouch + ML + Org Dev",
           500,
           "A writer with a pen for anything under the Sun",
           500,
