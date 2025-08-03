@@ -123,7 +123,10 @@ export default function Projects() {
                     { icon: <SiMongodb size={20} />, name: "MongoDB" },
                     { icon: <SiVercel size={20} />, name: "Vercel" },
                   ].map((stack, index) => (
-                    <div key={index} className="inline-block mr-4">
+                    <div
+                      key={index}
+                      className="flex flex-wrap max-h-64 overflow-x-auto"
+                    >
                       <input
                         id={`entry1${index}`}
                         type="checkbox"
