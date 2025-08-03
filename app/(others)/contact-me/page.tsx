@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import BoxLayout from "@/layout/BoxLayout/BoxLayout";
 import { IoMail, IoCall, IoOpenOutline } from "react-icons/io5";
-
 import styles from "./Contact.module.scss";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Head from "@/extras/head";
@@ -105,8 +104,6 @@ export default function Contact() {
                       <IoOpenOutline fill="#607b96" />
                       <span>Youtube Profile</span>
                     </a>,
-                    <a
-                   
                   ],
                 },
               ]}
@@ -223,7 +220,9 @@ export default function Contact() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>{`}`}</code>
+                  <code>
+                    <Sy val="}" />
+                  </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
