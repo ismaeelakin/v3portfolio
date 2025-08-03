@@ -118,17 +118,21 @@ export default function Projects() {
                   ].map((stack, index) => (
                     <div
                       key={index}
-                      className="grid grid-cols-2 gap-2 max-h-96 overflow-y-auto"
+                      className="grid grid-cols-2 gap-2 items-center max-h-72 overflow-y-auto"
                     >
                       <input
                         id={`entry1${index}`}
                         type="checkbox"
                         checked={filters.includes(stack.name)}
                         onChange={() => filter(stack.name)}
+                        className="mr-2"
                       />
-                      <label htmlFor={`entry1${index}`}>
+                      <label
+                        htmlFor={`entry1${index}`}
+                        className="flex items-center"
+                      >
                         {stack.icon}
-                        <span>{stack.name}</span>
+                        <span className="ml-2">{stack.name}</span>
                       </label>
                     </div>
                   )),
