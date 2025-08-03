@@ -125,7 +125,7 @@ export default function Projects() {
                   ].map((stack, index) => (
                     <div
                       key={index}
-                      className="flex flex-wrap max-h-64 overflow-x-auto"
+                      className="grid grid-cols-2 gap-2 max-h-96 overflow-y-auto"
                     >
                       <input
                         id={`entry1${index}`}
