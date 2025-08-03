@@ -34,7 +34,7 @@ import {
   SiVercel,
   SiCloudinary,
   SiMongodb,
-  SiMarkdotjs,
+  SiMatterdotjs,
 } from "react-icons/si";
 import Card from "@/components/Card/Card";
 import projects from "@/app/(others)/projects/projects";
