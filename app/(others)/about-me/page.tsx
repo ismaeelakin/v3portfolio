@@ -17,10 +17,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Unique-Usman</title>
+        <title>About - Ismaeel_Akin</title>
         <meta
           name="description"
-          content="Hi all. I am Unique-Usman, a front-end developer. I am proficient in JavaScript and TypeScript. I have experience working with React, Next.js, Node.js.  I am open to learning new technologies and working on new projects."
+          content="Hi all. I am Ismaeel-Akin, a Full-stack Software developer. I am proficient in JavaScript and TypeScript. I have experience working with React, Next.js, Node.js and MongoDB.  I am open to learning new technologies and working on new projects."
         />
       </Head>
       <div>
@@ -34,7 +34,7 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>I&apos;m Unique-Usman,</code>
+                  <code>I&apos;m Ismaeel_Akin,</code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -54,7 +54,9 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>But now Computer Programming is a deep-seated passion. </code>
+                  <code>
+                    But now Computer Programming is a deep-seated passion.{" "}
+                  </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -70,11 +72,16 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>I change from being a Software engineer to Computer Programmer</code>
+                  <code>
+                    I thrive as a Software engineer, Writer, and now Computer
+                    Programmer
+                  </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>because, I do not want to limit myself to softwares.</code>
+                  <code>
+                    because, I do not want to limit myself to softwares.
+                  </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -82,7 +89,9 @@ export default function About() {
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
-                  <code>I quickly master new tools and excel in collaborative work.</code>
+                  <code>
+                    I quickly master new tools and excel in collaborative work.
+                  </code>
                 </span>
                 <span className={styles.tr}>
                   <span className={styles.th}></span>
@@ -153,13 +162,13 @@ const FlexSideBar = () => {
             {
               title: "contacts",
               content: [
-                <a key={0} href="mailto:usmankinyemi202@gmail.com">
+                <a key={0} href="mailto:ismaeelakin@gmail.com">
                   <IoMail fill="#607b96" />
-                  <span>usmankinyemi202@gmail.com</span>
+                  <span>ismaeelakin@gmail.com</span>
                 </a>,
                 <a key={1} href="tel:+2349045959464">
                   <IoCall fill="#607b96" />
-                  <span>+(234)904-5959-464</span>
+                  <span>+(234)905-2444-308</span>
                 </a>,
               ],
             },

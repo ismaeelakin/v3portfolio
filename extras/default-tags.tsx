@@ -20,18 +20,23 @@ export default function DefaultTags() {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <meta name="twitter:title" content="Unique-Usman" />
+
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:title" content="Ismaeel Akin" />
       <meta
         name="twitter:description"
-        content="Hello there, I'm Unique-Usman. I'm a Computer Programmer."
+        content="Software Engineer, Writer, Designer & Builder of clean UIs."
       />
       <meta
         name="twitter:image:src"
-        content="/android-chrome-512x512.png"
+        content="https://pbs.twimg.com/profile_images/1952006250331312128/YLA85YcR_400x400.jpg"
       />
-      <meta name="twitter:image:alt" content="Check what Unique-Usman is doing" />
-      <meta name="twitter:creator" content="@usman_akinyemi" />
-      <meta name="twitter:site" content="@usman_akinyemi" />
+      <meta
+        name="twitter:image:alt"
+        content="See what Ismaeel Akin is working on"
+      />
+      <meta name="twitter:creator" content="@IsmaeelAkin" />
+      <meta name="twitter:site" content="@IsmaeelAkin" />
     </>
   );
 }

@@ -62,8 +62,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact - Unique-Usman</title>
-        <meta name="description" content="Send Unique-Usman a message" />
+        <title>Contact - Ismaeel_Akin</title>
+        <meta name="description" content="Send Ismaeel_Akin a message" />
       </Head>
       <div>
         <BoxLayout
@@ -74,13 +74,13 @@ export default function Contact() {
                 {
                   title: "contacts",
                   content: [
-                    <a key={0} href="mailto:usmanakinyemi202@gmail.com">
+                    <a key={0} href="mailto:ismaeelakin@gmail.com">
                       <IoMail fill="#607b96" />
-                      <span>usmanakinyemi202@gmail.com</span>
+                      <span>ismaeelakin@gmail.com</span>
                     </a>,
-                    <a key={1} href="tel:+2349045959464">
+                    <a key={1} href="tel:+2349052444308">
                       <IoCall fill="#607b96" />
-                      <span>+(234)904-5959-464</span>
+                      <span>+(234)905-2444-308</span>
                     </a>,
                   ],
                 },
@@ -89,7 +89,7 @@ export default function Contact() {
                   content: [
                     <a
                       key={0}
-                      href="http://discordapp.com/users/927283592072147054"
+                      href="http://discordapp.com/users/akin02861"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -98,7 +98,7 @@ export default function Contact() {
                     </a>,
                     <a
                       key={1}
-                      href="https://www.youtube.com/@usmanakinyemi6054"
+                      href="https://www.youtube.com/@ismaeelakin4019"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -106,15 +106,7 @@ export default function Contact() {
                       <span>Youtube Profile</span>
                     </a>,
                     <a
-                      key={2}
-                      href="https://hashnode.com/@UniqueUsman"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <IoOpenOutline fill="#607b96" />
-                      <span>Hashnode Profile</span>
-                    </a>,
-
+                   
                   ],
                 },
               ]}
@@ -131,7 +123,7 @@ export default function Contact() {
                   <div className={styles.ContactFormBlock}>
                     <label>_name:</label>
                     <input
-                      placeholder="Unique Usman"
+                      placeholder="Ismaeel Akin"
                       name="name"
                       value={formEntries.name}
                       onChange={formEntriesHandler}
@@ -140,7 +132,7 @@ export default function Contact() {
                   <div className={styles.ContactFormBlock}>
                     <label>_email:</label>
                     <input
-                      placeholder="usmanakinyemi202@gmail.com"
+                      placeholder="ismaeelakin@gmail.com"
                       name="email"
                       value={formEntries.email}
                       onChange={formEntriesHandler}

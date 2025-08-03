@@ -19,7 +19,7 @@ export default function Navbar() {
       className={[styles.Navbar, visibility && styles.NavbarAvtive].join(" ")}
     >
       <div>
-        <Link href={"/"}>Unique-Usman</Link>
+        <Link href={"/"}>Ismaeel_Akin</Link>
         <div className={styles.hamburger}>
           <label htmlFor="checkbox" className={styles.hamburgerControls}>
             <span

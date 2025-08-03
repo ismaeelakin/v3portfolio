@@ -18,9 +18,25 @@ import {
   SiNginx,
   SiLinux,
   SiGnubash,
+  SiPostgresql,
+  SiSocketdotio,
+  SiTailwindcss,
+  SiSupabase,
+  SiExpress,
+  SiNodedotjs,
+  SiVite,
+  SiJirasoftware,
+  SiJupyter,
+  SiGithub,
+  SiJitsi,
+  SiRedux,
+  SiOpenai,
+  SiVercel,
+  SiCloudinary,
+  SiMongodb,
+  SiMarkdotjs,
 } from "react-icons/si";
 import Card from "@/components/Card/Card";
-
 import projects from "@/app/(others)/projects/projects";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { ProjectTypes } from "@/types";
@@ -57,7 +73,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Unique-Usman - Projects</title>
+        <title>Ismaeel_Akin - Projects</title>
         <meta
           name="description"
           content="Check out what I've been working on."
@@ -71,66 +87,41 @@ export default function Projects() {
                 {
                   title: "projects",
                   content: [
-                    {
-                      icon: <SiReact size={20} />,
-                      name: "React",
-                    },
-                    {
-                      icon: <SiHtml5 size={20} />,
-                      name: "HTML5",
-                    },
+                    { icon: <SiReact size={20} />, name: "React" },
+                    { icon: <SiNextdotjs size={20} />, name: "NextJs" },
+                    { icon: <SiTailwindcss size={20} />, name: "Tailwind CSS" },
+                    { icon: <SiTypescript size={20} />, name: "Typescript" },
+                    { icon: <SiJavascript size={20} />, name: "JavaScript" },
+                    { icon: <SiHtml5 size={20} />, name: "HTML5" },
+                    { icon: <SiCss3 size={20} />, name: "CSS3" },
+                    { icon: <SiVite size={20} />, name: "Vite" },
+                    { icon: <SiRedux size={20} />, name: "Redux" },
+                    { icon: <SiSupabase size={20} />, name: "Supabase" },
+                    { icon: <SiSocketdotio size={20} />, name: "Socket.io" },
+                    { icon: <SiExpress size={20} />, name: "Express" },
+                    { icon: <SiNodedotjs size={20} />, name: "Node.js" },
+                    { icon: <SiPostgresql size={20} />, name: "PostgreSQL" },
+                    { icon: <SiPython size={20} />, name: "Python" },
+                    { icon: <SiFlask size={20} />, name: "Flask" },
+                    { icon: <SiLangchain size={20} />, name: "LangChain" },
+                    { icon: <SiOpenai size={20} />, name: "OpenAI" },
+                    { icon: <SiJupyter size={20} />, name: "Jupyter" },
+                    { icon: <SiJitsi size={20} />, name: "Jitsi Meet" },
+                    { icon: <SiCloudinary size={20} />, name: "Cloudinary" },
+                    { icon: <SiGithub size={20} />, name: "GitHub" },
+                    { icon: <SiLinux size={20} />, name: "Linux" },
+                    { icon: <SiGnubash size={20} />, name: "Bash Scripting" },
+                    { icon: <SiC size={20} />, name: "C" },
+                    { icon: <SiCplusplus size={20} />, name: "C++" },
                     {
                       icon: <SiOpensourceinitiative size={20} />,
                       name: "OpenSource Contributions",
                     },
-                    {
-                      icon: <SiNextdotjs size={20} />,
-                      name: "NextJs",
-                    },
-                    {
-                      icon: <SiTypescript size={20} />,
-                      name: "Typescript",
-                    },
-                    {
-                      icon: <SiJavascript size={20} />,
-                      name: "JavaScript",
-                    },
-                    {
-                      icon: <SiCss3 size={20} />,
-                      name: "CSS3",
-                    },
-                    {
-                      icon: <SiC size={20} />,
-                      name: "C",
-                    },
-                    {
-                      icon: <SiCplusplus size={20} />,
-                      name: "C++",
-                    },
-                    {
-                      icon: <SiPython size={20} />,
-                      name: "Python",
-                    },
-                    {
-                      icon: <SiFlask size={20} />,
-                      name: "Flask",
-                    },
-                    {
-                      icon: <SiLangchain size={20} />,
-                      name: "LangChain",
-                    },
-                    {
-                      icon: <SiNginx size={20} />,
-                      name: "Nginx",
-                    },
-                    {
-                      icon: <SiGnubash size={20} />,
-                      name: "Bash Scripting",
-                    },
-                    {
-                      icon: <SiLinux size={20} />,
-                      name: "Linux",
-                    },
+                    { icon: <SiNginx size={20} />, name: "Nginx" },
+                    { icon: <SiJirasoftware size={20} />, name: "Jira" },
+                    { icon: <SiMarkdotjs size={20} />, name: "Markdown" },
+                    { icon: <SiMongodb size={20} />, name: "MongoDB" },
+                    { icon: <SiVercel size={20} />, name: "Vercel" },
                   ].map((stack, index) => (
                     <div key={index}>
                       <input
@@ -152,26 +143,24 @@ export default function Projects() {
           navTitle={filters.length ? filters.join("; ") : "Projects"}
           resetEntries={() => setFilters([])}
         >
-          <div className="grid grid-cols-3 gap-x-4 gap-y-12 w-full pt-6 px-8 pb-12 grid-rows-[mansory] box-border overflow-y-scroll lg:grid-cols-2 md:block">
+          <div className="grid grid-cols-3 gap-x-4 gap-y-12 w-full pt-6 px-8 pb-12 grid-rows-[masonry] box-border overflow-y-scroll lg:grid-cols-2 md:block">
             {Children.toArray(
-              filteredList.map((project) => {
-                return (
-                  <div className="box-content h-full flex flex-col">
-                    <div className=" mb-4 text-sm">
-                      <span className="text-[#5565e8]">{`//`}</span>
-                      <span className="text-textColor">{`_${project.name}`}</span>
-                    </div>
-                    <Card
-                      alt={project.name}
-                      previewLink={project.previewLink}
-                      mainType={project.mainType}
-                      previewImg={project.previewImg}
-                      description={project.description}
-                      githubUrl={project.githubUrl}
-                    />
+              filteredList.map((project) => (
+                <div className="box-content h-full flex flex-col">
+                  <div className="mb-4 text-sm">
+                    <span className="text-[#5565e8]">{`//`}</span>
+                    <span className="text-textColor">{`_${project.name}`}</span>
                   </div>
-                );
-              })
+                  <Card
+                    alt={project.name}
+                    previewLink={project.previewLink}
+                    mainType={project.mainType}
+                    previewImg={project.previewImg}
+                    description={project.description}
+                    githubUrl={project.githubUrl}
+                  />
+                </div>
+              ))
             )}
           </div>
         </BoxLayout>
