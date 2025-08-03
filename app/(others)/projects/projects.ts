@@ -18,7 +18,6 @@ const projects: ProjectTypes[] = [
       "Python",
       "LangChain",
       "Flask",
-      "OpenAI",
       "Jupyter",
       "Typescript",
       "Supabase",
@@ -45,7 +44,6 @@ const projects: ProjectTypes[] = [
       "Express",
       "Node.js",
       "Jitsi Meet",
-      "Cloudinary",
       "OpenSource Contributions",
     ],
     description:
