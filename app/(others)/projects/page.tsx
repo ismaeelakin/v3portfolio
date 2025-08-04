@@ -135,13 +135,6 @@ export default function Projects() {
           }
           navTitle={filters.length ? filters.join("; ") : "Projects"}
           resetEntries={() => setFilters([])}
-          footer={
-            <div className="mt-4">
-              <span>find me in:</span>
-              <a href="https://x.com/IsmaeelAkin">Twitter</a>
-              <a href="https://linkedin.com/in/ismaeelha/">LinkedIn</a>
-            </div>
-          }
         >
           <div className="grid grid-cols-3 gap-x-4 gap-y-12 w-full pt-6 px-8 pb-12 grid-rows-[masonry] box-border overflow-y-scroll lg:grid-cols-2 md:block">
             {Children.toArray(
@@ -162,6 +155,11 @@ export default function Projects() {
                 </div>
               ))
             )}
+          </div>
+          <div className="mt-4">
+            <span>find me in:</span>
+            <a href="https://x.com/IsmaeelAkin">Twitter</a>
+            <a href="https://linkedin.com/in/ismaeelha/">LinkedIn</a>
           </div>
         </BoxLayout>
       </div>
