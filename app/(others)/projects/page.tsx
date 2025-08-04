@@ -86,62 +86,88 @@ export default function Projects() {
               contents={[
                 {
                   title: "projects",
-                  content: [
-                    { icon: <SiReact size={20} />, name: "React" },
-                    { icon: <SiNextdotjs size={20} />, name: "NextJs" },
-                    { icon: <SiTailwindcss size={20} />, name: "Tailwind CSS" },
-                    { icon: <SiTypescript size={20} />, name: "Typescript" },
-                    { icon: <SiJavascript size={20} />, name: "JavaScript" },
-                    { icon: <SiHtml5 size={20} />, name: "HTML5" },
-                    { icon: <SiCss3 size={20} />, name: "CSS3" },
-                    { icon: <SiJitsi size={20} />, name: "Jitsi Meet" },
-                    { icon: <SiSupabase size={20} />, name: "Supabase" },
-                    { icon: <SiSocketdotio size={20} />, name: "Socket.io" },
-                    { icon: <SiExpress size={20} />, name: "Express" },
-                    { icon: <SiNodedotjs size={20} />, name: "Node.js" },
-                    {
-                      icon: <SiOpensourceinitiative size={20} />,
-                      name: "OpenSource Contributions",
-                    },
-                    { icon: <SiPostgresql size={20} />, name: "PostgreSQL" },
-                    { icon: <SiPython size={20} />, name: "Python" },
-                    { icon: <SiFlask size={20} />, name: "Flask" },
-                    { icon: <SiLangchain size={20} />, name: "LangChain" },
-                    { icon: <SiJupyter size={20} />, name: "Jupyter" },
-                    { icon: <SiLinux size={20} />, name: "Linux" },
-                    { icon: <SiGnubash size={20} />, name: "Bash Scripting" },
-                    { icon: <SiC size={20} />, name: "C" },
-                    { icon: <SiCplusplus size={20} />, name: "C++" },
-                    { icon: <SiNginx size={20} />, name: "Nginx" },
-                    { icon: <SiMatterdotjs size={20} />, name: "Markdown" },
-                    { icon: <SiMongodb size={20} />, name: "MongoDB" },
-                  ].map((stack, index) => (
-                    <div
-                      key={index}
-                      className="grid grid-cols-2 gap-2 items-center max-h-72 overflow-y-auto"
-                    >
-                      <input
-                        id={`entry1${index}`}
-                        type="checkbox"
-                        checked={filters.includes(stack.name)}
-                        onChange={() => filter(stack.name)}
-                        className="mr-2"
-                      />
-                      <label
-                        htmlFor={`entry1${index}`}
-                        className="flex items-center"
-                      >
-                        {stack.icon}
-                        <span className="ml-2">{stack.name}</span>
-                      </label>
+                  content: (
+                    <div className="grid grid-cols-2 gap-2 max-h-80 overflow-y-auto">
+                      {[
+                        { icon: <SiReact size={20} />, name: "React" },
+                        { icon: <SiNextdotjs size={20} />, name: "NextJs" },
+                        {
+                          icon: <SiTailwindcss size={20} />,
+                          name: "Tailwind CSS",
+                        },
+                        {
+                          icon: <SiTypescript size={20} />,
+                          name: "Typescript",
+                        },
+                        {
+                          icon: <SiJavascript size={20} />,
+                          name: "JavaScript",
+                        },
+                        { icon: <SiHtml5 size={20} />, name: "HTML5" },
+                        { icon: <SiCss3 size={20} />, name: "CSS3" },
+                        { icon: <SiJitsi size={20} />, name: "Jitsi Meet" },
+                        { icon: <SiSupabase size={20} />, name: "Supabase" },
+                        {
+                          icon: <SiSocketdotio size={20} />,
+                          name: "Socket.io",
+                        },
+                        { icon: <SiExpress size={20} />, name: "Express" },
+                        { icon: <SiNodedotjs size={20} />, name: "Node.js" },
+                        {
+                          icon: <SiOpensourceinitiative size={20} />,
+                          name: "OpenSource Contributions",
+                        },
+                        {
+                          icon: <SiPostgresql size={20} />,
+                          name: "PostgreSQL",
+                        },
+                        { icon: <SiPython size={20} />, name: "Python" },
+                        { icon: <SiFlask size={20} />, name: "Flask" },
+                        { icon: <SiLangchain size={20} />, name: "LangChain" },
+                        { icon: <SiJupyter size={20} />, name: "Jupyter" },
+                        { icon: <SiLinux size={20} />, name: "Linux" },
+                        {
+                          icon: <SiGnubash size={20} />,
+                          name: "Bash Scripting",
+                        },
+                        { icon: <SiC size={20} />, name: "C" },
+                        { icon: <SiCplusplus size={20} />, name: "C++" },
+                        { icon: <SiNginx size={20} />, name: "Nginx" },
+                        { icon: <SiMatterdotjs size={20} />, name: "Markdown" },
+                        { icon: <SiMongodb size={20} />, name: "MongoDB" },
+                      ].map((stack, index) => (
+                        <div key={index} className="flex items-center">
+                          <input
+                            id={`entry1${index}`}
+                            type="checkbox"
+                            checked={filters.includes(stack.name)}
+                            onChange={() => filter(stack.name)}
+                            className="mr-2"
+                          />
+                          <label
+                            htmlFor={`entry1${index}`}
+                            className="flex items-center"
+                          >
+                            {stack.icon}
+                            <span className="ml-2">{stack.name}</span>
+                          </label>
+                        </div>
+                      ))}
                     </div>
-                  )),
+                  ),
                 },
               ]}
             />
           }
           navTitle={filters.length ? filters.join("; ") : "Projects"}
           resetEntries={() => setFilters([])}
+          footer={
+            <div className="mt-4">
+              <span>find me in:</span>
+              <a href="https://twitter.com/yourhandle">Twitter</a>
+              <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>
+            </div>
+          }
         >
           <div className="grid grid-cols-3 gap-x-4 gap-y-12 w-full pt-6 px-8 pb-12 grid-rows-[masonry] box-border overflow-y-scroll lg:grid-cols-2 md:block">
             {Children.toArray(
