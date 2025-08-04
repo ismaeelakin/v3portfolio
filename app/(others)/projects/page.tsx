@@ -16,7 +16,6 @@ import {
   SiFlask,
   SiLangchain,
   SiNginx,
-  SiLinux,
   SiGnubash,
   SiPostgresql,
   SiSocketdotio,
@@ -24,10 +23,7 @@ import {
   SiSupabase,
   SiExpress,
   SiNodedotjs,
-  SiJupyter,
   SiJitsi,
-  SiMongodb,
-  SiMatterdotjs,
 } from "react-icons/si";
 import Card from "@/components/Card/Card";
 import projects from "@/app/(others)/projects/projects";
@@ -100,14 +96,11 @@ export default function Projects() {
                     { icon: <SiPython size={20} />, name: "Python" },
                     { icon: <SiFlask size={20} />, name: "Flask" },
                     { icon: <SiLangchain size={20} />, name: "LangChain" },
-                    { icon: <SiJupyter size={20} />, name: "Jupyter" },
-                    { icon: <SiLinux size={20} />, name: "Linux" },
+
                     { icon: <SiGnubash size={20} />, name: "Bash Scripting" },
                     { icon: <SiC size={20} />, name: "C" },
                     { icon: <SiCplusplus size={20} />, name: "C++" },
                     { icon: <SiNginx size={20} />, name: "Nginx" },
-                    { icon: <SiMatterdotjs size={20} />, name: "Markdown" },
-                    { icon: <SiMongodb size={20} />, name: "MongoDB" },
                   ].map((stack, index) => (
                     <div
                       key={index}

@@ -21,7 +21,7 @@ const projects: ProjectTypes[] = [
       "Jupyter",
       "Typescript",
       "Supabase",
-      "Markdown",
+
       "Tailwind CSS",
       "OpenSource Contributions",
     ],
@@ -51,6 +51,14 @@ const projects: ProjectTypes[] = [
     githubUrl: "https://akin-space.vercel.app/",
   },
   {
+    name: "Writing Portfolio",
+    mainType: "OpenSource Contributions",
+    previewLink: "https://ismaeel-akin-ilv71g5.gamma.site//",
+    previewImg: "/projects/writingsamples.jpg",
+    category: ["OpenSource Contributions"],
+    description: "My writing portfolio website.",
+  },
+  {
     name: "SuperVaani",
     mainType: "typescript",
     previewImg: "/projects/supervaani.png",
@@ -65,7 +73,7 @@ const projects: ProjectTypes[] = [
       "Haproxy",
       "LangChain",
     ],
-    description: "A FullStack RAG Application for a College",
+    description: "A FullStack RAG Application for Plaksha",
   },
   {
     name: "Systemd",
