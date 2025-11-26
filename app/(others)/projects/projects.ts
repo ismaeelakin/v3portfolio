@@ -53,7 +53,7 @@ const projects: ProjectTypes[] = [
   {
     name: "Writing Portfolio",
     mainType: "OpenSource Contributions",
-    previewLink: "https://ismaeel-akin-ilv71g5.gamma.site//",
+    previewLink: "https://ismaeel-habeeb-ilv71g5.gamma.site/",
     previewImg: "/projects/writingsamples.jpg",
     category: ["OpenSource Contributions"],
     description: "My writing portfolio website.",
